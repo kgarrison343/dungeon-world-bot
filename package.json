@@ -1,0 +1,11 @@
+{
+  "name": "dungeon-world-bot",
+  "version": "1.0.0",
+  "description": "An app with many useful commands for playing Dungeon World",
+  "main": "bot.js",
+  "author": "Kyle Garrison",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.1.0"
+  }
+}
