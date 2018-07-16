@@ -6,51 +6,62 @@ module.exports = {
   execute(message, args) {
     const modifier = determineModifier(args);
 
-    if(Number.isNaN(modifier)) {
-      return {success:false, reason: 'Invalid Arguments'};
+    if (Number.isNaN(modifier)) {
+      return {
+        success: false,
+        reason: 'Invalid Arguments'
+      };
     }
 
     const result = rollForSuccess(modifier);
     message.channel.send(`Message: ${result.message}\nRoll: ${result.rollResult}`);
-    return {success: true};
+    return {
+      success: true
+    };
   }
 };
 
 function rollForSuccess(modifier) {
   const rollResult = generateRandomNumber(6) + generateRandomNumber(6) + modifier;
   let message = '';
-  if(rollResult <= 6) {
+  if (rollResult <= 6) {
     message = 'Mark XP and the GM decides what happens!';
-  } else if (rollResult < 10){
+  } else if (rollResult < 10) {
     message = 'You do it, but complications occur!';
   } else {
     message = 'No sweat!';
   }
 
-  return { rollResult, message };
+  return {
+    rollResult,
+    message
+  };
 }
 
 function determineModifier(args) {
-  if(!args.length){
+  // No arguments, no modifier
+  if (!args.length) {
     return 0;
   }
 
-  if(args.length === 1){
+  // If there's only one argument it had better be a number!
+  if (args.length === 1) {
     return parseInt(args[0]);
   }
 
-  let inverter = 1;
+  // If there are 2 arguments, then the first must be '+' or '-', otherwise the
+  // command is invalid.
+  if (args.length === 2) {
+    let inverter = 1;
 
-  if(args[0] === '-'){
-    inverter = -1;
-  } else if(args[0]!== '+') {
-    return NaN;
-  }
-
-  if(args.length === 2){
+    if (args[0] === '-') {
+      inverter = -1;
+    } else if (args[0] !== '+') {
+      return NaN;
+    }
     return parseInt(args[1]) * inverter;
   }
-
+  // If there are more than 2 argmuments, the command is invalid.
   return NaN;
 }
 
