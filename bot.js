@@ -53,19 +53,30 @@ bot.on('message', function(message){
   const command = bot.commands.get(commandName);
 
   if(command.args && !args.length) {
-    let reply = `You didn't provide any arguments, ${message.author}!`;
-
-    if(command.usage) {
-      reply += `\nUsage: ${prefix}${command.name} ${command.usage}`;
-    }
+    let reply = `You didn't provide any arguments, ${message.author}!\n` + generateUsageString(command);
 
     return message.channel.send(reply);
   }
 
   try {
-    command.execute(message, args);
+    const result = command.execute(message, args);
+    if(command.handleErrors && result.success === false) {
+      message.reply(generateErrorMessage(command, result));
+    }
   } catch(error) {
     logger.error(error);
     message.reply('There was an error trying to execute that command!');
   }
 });
+
+function generateUsageString(command){
+  if(command.usage) {
+    return `Usage: ${prefix}${command.name} ${command.usage}`;
+  }
+
+  return '';
+}
+
+function generateErrorMessage(command, result){
+  return `${result.reason}: ` + generateUsageString(command);
+}
