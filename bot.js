@@ -9,6 +9,7 @@ const {
 const bot = new Discord.Client();
 bot.commands = new Discord.Collection();
 
+
 const commandFiles = fs.readdirSync('./commands')
   .filter(file => file.endsWith('.js'));
 
@@ -31,6 +32,7 @@ bot.on('message', function(message) {
   if (message.content.substring(0, prefix.length) !== prefix || message.author.bot) {
     return;
   }
+  
   let args = message.content.substring(prefix.length).split(/ +/);
 
   const commandName = args.shift().toLowerCase();
