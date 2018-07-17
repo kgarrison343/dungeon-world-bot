@@ -1,9 +1,12 @@
+const logger = require('../logger.js');
+
 module.exports = {
   name: 'roll',
   description: 'Roll 2d6 to determine success or failure of an action.',
   usage: '[+/-<modifier>]',
   handleErrors: true,
   execute(message, args) {
+    logger.info('Executing roll');
     const modifier = determineModifier(args);
 
     if (Number.isNaN(modifier)) {

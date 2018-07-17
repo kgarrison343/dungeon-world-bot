@@ -1,25 +1,10 @@
 const fs = require('fs');
 const Discord = require('discord.js');
-const winston = require('winston');
+const logger = require('./logger.js');
 const auth = require('./auth.json');
 const {
   prefix
 } = require('./config.json');
-
-const myFormat = winston.format.printf(info => {
-  return `${info.timestamp} [${info.level}]: ${info.message}`;
-});
-
-const logger = winston.createLogger({
-  level: 'debug',
-  format: winston.format.combine(
-    winston.format.timestamp(),
-    winston.format.colorize(),
-    myFormat),
-  transports: [
-    new winston.transports.Console()
-  ]
-});
 
 const bot = new Discord.Client();
 bot.commands = new Discord.Collection();
