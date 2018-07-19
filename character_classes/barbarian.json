@@ -1,0 +1,9 @@
+{
+	"name": "Barbarian",
+	"description": "A harsh wind howls over the mountains\n    But I stand tall, alone and unbowed\n    With my wild hair and pelts\n    I am the barbarian, fierce and proud\n\n    No weapon can fell me, no man can best me\n    For I vanquish all with my axe and my shield\n    Flee now before my might and wrath\n    To my power surrender, to my fury yield\n\n    Like the wild north wind I come\n    Laying low all in sight\n    So cower in fear, you soft ones\n    And flee fast into the night\n    The Barbarian by Josiah Wilson, Jun 2014",
+	"recommendedNames": "*Names*: Gorm, Si-Yi, Priscilla, Sen, Xia, Anneira, Haepha, Lur, Shar, Korrin, Nkosi, Fafnir, Qua, Sacer, Vercin’geto, Barbozar, Clovis, Frael, Thra-raxes, Sillius, Sha-Sheena, Khamisi\n\n*Titles*: the Glorious, the Hungry, the Irascible, the Undefeated, the Gluttonous, Foesmasher, Bonebreaker, the Mirthful, the Melancholic, All-Mighty, the Giant, the Triumphant",
+	"recommendedRaces": "You may be elf, dwarf, halfling, or human, but you and your people are not from around here.",
+	"recommendedLooks": "Choose one for each:\nMighty thews, long shanks, scrawny, supple\n\nTormented, haunted, wild, shrouded\n\nTattoos, bejeweled, unmarred\n\nScraps, silks, scavenger’s outfit, weather-inappropriate",
+	"baseHP": 8,
+	"baseDamage": "d10"
+}

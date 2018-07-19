@@ -1,0 +1,9 @@
+{
+	"name": "Paladin",
+	"description": "Hell awaits. An eternity of torment in fire or ice or whatever best suits the sins of the damned throngs of Dungeon World. All that stands between the pits of that grim torture and salvation is you. Holy man, armored war machine, templar of the Good and the Light, right? The cleric may say his prayers at night to the gods, dwelling in their heavens. The fighter may wield his sharp sword in the name of “good” but you know. Only you.\n\nEyes, hands, and sweet killing blow of the gods, you are. Yours is the gift of righteousness and virtue. Of justice. Vision, too. A purity of intent that your companions do not have.\n\nSo guide these fools, paladin. Take up your holy cause and bring salvation to the wastrel world.\n\nVae victis, right?",
+	"recommendedNames": "*Human*: Thaddeus, Augustine, Lux, Cassius, Hadrian, Lucia, Octavia, Regulus, Valeria, Sanguinus, Titanius",
+	"recommendedRaces": "Human: When you pray for guidance, even for a moment, and ask, “What here is evil?” the GM will tell you, honestly.",
+	"recommendedLooks": "Choose one for each:\n\nKind Eyes, Fiery Eyes, or Glowing Eyes\n\nHelmet, Styled Hair, or Bald\n\nWorn Holy Symbol or Fancy Holy Symbol\n\nFit Body, Bulky Body, or Thin Body",
+	"baseHP": 10,
+	"baseDamage": "d10"
+}

@@ -1,0 +1,9 @@
+{
+	"name": "Thief",
+	"description": "You’ve heard them, sitting around the campfire. Bragging about this battle or that. About how their gods are smiling on your merry band. You count your coins and smile to yourself—this is the thrill above all. You alone know the secret of Dungeon World—filthy filthy lucre.\n\nSure, they give you lip for all the times you’ve snuck off alone but without you, who among them wouldn’t have been dissected by a flying guillotine or poisoned straight to death by some ancient needle trap? So, let them complain. When you’re done with all this delving you’ll toast their hero’s graves.\n\nFrom your castle. Full of gold. You rogue.",
+	"recommendedNames": "*Halfling*: Felix, Rook, Mouse, Sketch, Trixie, Robin, Omar, Brynn, Bug\n\n*Human*: Sparrow, Shank, Jack, Marlow, Dodge, Rat, Pox, Humble, Farley",
+	"recommendedRaces": "Halfling: When you attack with a ranged weapon, deal +2 damage.\nHuman: You are a professional. When you spout lore or discern realities about criminal activities, take +1.",
+	"recommendedLooks": "Choose one for each:\n\nShifty Eyes or Criminal Eyes\n\nHooded Head, Messy Hair, or Cropped Hair\n\nDark Clothes, Fancy Clothes, or Common Clothes\n\nLithe Body, Knobby Body, or Flabby Body",
+	"baseHP": 6,
+	"baseDamage": "d8"
+}
