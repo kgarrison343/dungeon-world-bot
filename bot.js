@@ -15,9 +15,9 @@ const commandFiles = fs.readdirSync('./commands')
 
 for (const file of commandFiles) {
   const command = require(`./commands/${file}`);
-
+	logger.debug(`${command.name.toLowerCase()}`);
   //add the command to the list of commands
-  bot.commands.set(command.name, command);
+  bot.commands.set(command.name.toLowerCase(), command);
 }
 
 logger.info('initialized. logging in...');

@@ -1,0 +1,9 @@
+{
+	"name": "Immolator",
+	"description": "I love the word 'burn'.\n    Like imagine,\n    Everything's burning,\n    I am on fire,\n    You're on fire,\n    The world is on fire,\n    And I find it beautiful.\n    Burning beautiful.\n    It's the burning out part that's scary.\n    Burning Beautiful by chuckae, Jun 2015",
+	"recommendedNames": "*Human*: Solomon, Timothy, Kalil, Omen, Yohn, Hiko, Agasha, Elizabeth, Harald, Fatia, Khalwa, Adur, Ignis, Yajna, Umlilo\n\n*Salamander*: Sulfurheart, Flamewalker, Emberlash, Cinderclaw, Charfiend, Bittertallow, Barrowblaze, Singescale, Candlewick, Coalfang",
+	"recommendedRaces": "Human: When you Make Camp next to a large, open flame, regain all of your HP.\nSalamander: Non-magical heat and fire cannot harm you.",
+	"recommendedLooks": "Choose one for each, or write your own:\n\nStrange brands, ritual scars, perfect skin\n\nSmouldering eys, warm eyes, searing eyes\n\nCrackling voice, whispering, roaring\n\nImperious bearing, manic attitude, barely-hidden rage",
+	"baseHP": 4,
+	"baseDamage": "d8"
+}
