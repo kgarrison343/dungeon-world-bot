@@ -15,7 +15,7 @@ const commandFiles = fs.readdirSync('./commands')
 
 for (const file of commandFiles) {
   const command = require(`./commands/${file}`);
-	logger.debug(`${command.name.toLowerCase()}`);
+  logger.debug(`${command.name.toLowerCase()}`);
   //add the command to the list of commands
   bot.commands.set(command.name.toLowerCase(), command);
 }
@@ -32,7 +32,7 @@ bot.on('message', function(message) {
   if (message.content.substring(0, prefix.length) !== prefix || message.author.bot) {
     return;
   }
-  
+
   let args = message.content.substring(prefix.length).split(/ +/);
 
   const commandName = args.shift().toLowerCase();

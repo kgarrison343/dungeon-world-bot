@@ -4,7 +4,7 @@ const myFormat = winston.format.printf(info => {
   return `${info.timestamp} [${info.level}]: ${info.message}`;
 });
 
-module.exports =  winston.createLogger({
+module.exports = winston.createLogger({
   level: 'debug',
   format: winston.format.combine(
     winston.format.timestamp(),
