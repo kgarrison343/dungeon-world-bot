@@ -45,6 +45,7 @@ module.exports = {
           let responseNumber = parseInt(collected.first());
           if (!responseNumber) return message.reply('that isn\'t a valid class! Please try again.');
           const selection = classList[responseNumber - 1];
+          usersCharacter.charClass = selection;
           message.channel.send(`${selection.name}\n${selection.description}`);
         }).catch(() => {
           message.reply('Oops! you\'ve run out of time to select!');
