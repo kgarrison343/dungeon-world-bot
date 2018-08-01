@@ -10,12 +10,14 @@ module.exports = {
   description: 'Use this method to choose a class for your character. Not available if you have already chosen a class.',
   execute(message) {
     logger.debug('Executing chooseClass');
+    const key = message.author.id;
+
     if (!characters.has(message.author.id)) {
       logger.debug('Creating non-existent character for user');
-      characters.set(message.author.id, new Character(message.author.id));
+      characters.set(message.author.id, new Character(key));
     }
 
-    const usersCharacter = characters.get(message.author.id);
+    const usersCharacter = characters.get(key);
 
     if (usersCharacter.charClass) return message.reply('You have already selected a character class!');
 
@@ -46,6 +48,7 @@ module.exports = {
           if (!responseNumber) return message.reply('that isn\'t a valid class! Please try again.');
           const selection = classList[responseNumber - 1];
           usersCharacter.charClass = selection;
+          characters.set(key, usersCharacter);
           message.channel.send(`${selection.name}\n${selection.description}`);
         }).catch(() => {
           message.reply('Oops! you\'ve run out of time to select!');
