@@ -4,6 +4,7 @@ const {
   characters
 } = require('../database.js');
 const Character = require('../classes/Character.js');
+const Discord = require('discord.js');
 
 module.exports = {
   name: 'chooseClass',
@@ -47,9 +48,18 @@ module.exports = {
           let responseNumber = parseInt(collected.first());
           if (!responseNumber) return message.reply('that isn\'t a valid class! Please try again.');
           const selection = classList[responseNumber - 1];
-          usersCharacter.charClass = selection;
-          characters.set(key, usersCharacter);
-          message.channel.send(`${selection.name}\n${selection.description}`);
+          //usersCharacter.charClass = selection;
+          //characters.set(key, usersCharacter);
+          const classEmbed = new Discord.RichEmbed()
+            .setColor('#0099ff')
+            .setAuthor('Choose Class?')
+            .setTitle(selection.name)
+            .setDescription(selection.description)
+            .addField('Recommended Races', selection.recommendedRaces, true)
+            .addField('Recommended Names', selection.recommendedNames, true)
+            .setFooter('Respond with yes to select this class!');
+
+          message.channel.send(classEmbed);
         }).catch(() => {
           message.reply('Oops! you\'ve run out of time to select!');
         });

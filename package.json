@@ -6,12 +6,12 @@
   "author": "Kyle Garrison",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^5.1.0"
+    "eslint": "^5.9.0"
   },
   "dependencies": {
-    "discord.js": "^11.3.2",
-    "enmap": "^2.6.3",
-    "enmap-sqlite": "^2.0.3",
-    "winston": "^3.0.0"
+    "discord.js": "^11.4.2",
+    "enmap": "^2.7.2",
+    "enmap-sqlite": "^2.0.5",
+    "winston": "^3.1.0"
   }
 }
