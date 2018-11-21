@@ -23,7 +23,7 @@ module.exports = {
       message.reply(`Here is your character! ${usersCharacter.userId}`);
     } else {
       //TODO: Lets put the character creation commands in separate files and write this to
-      message.reply('Welcome! Please start creating your character with the following commands. I suggest starting with chooseCharacter!');
+      message.reply('Welcome! Please start creating your character with the following commands. I suggest starting with chooseClass!');
     }
   }
 };
