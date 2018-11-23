@@ -48,21 +48,49 @@ module.exports = {
           let responseNumber = parseInt(collected.first());
           if (!responseNumber) return message.reply('that isn\'t a valid class! Please try again.');
           const selection = classList[responseNumber - 1];
-          //usersCharacter.charClass = selection;
-          //characters.set(key, usersCharacter);
-          const classEmbed = new Discord.RichEmbed()
-            .setColor('#0099ff')
-            .setAuthor('Choose Class?')
-            .setTitle(selection.name)
-            .setDescription(selection.description)
-            .addField('Recommended Races', selection.recommendedRaces, true)
-            .addField('Recommended Names', selection.recommendedNames, true)
-            .setFooter('Respond with yes to select this class!');
 
-          message.channel.send(classEmbed);
+          message.channel.send(displayClass(selection)).then(() => {
+            awaitConfirmResponse(message, () => {
+              usersCharacter.charClass = selection;
+              characters.set(key, usersCharacter);
+              message.reply(`Ok, you have chosen to be a ${selection.name}`);
+            });
+          });
         }).catch(() => {
           message.reply('Oops! you\'ve run out of time to select!');
         });
     });
   }
 };
+
+function displayClass(charClass){
+  const classEmbed = new Discord.RichEmbed()
+    .setColor('#0099ff')
+    .setAuthor('Choose Class?')
+    .setTitle(charClass.name)
+    .setDescription(charClass.description)
+    .addField('Recommended Races', charClass.recommendedRaces, true)
+    .addField('Recommended Names', charClass.recommendedNames, true)
+    .setFooter('Respond with yes to select this class!');
+
+  return classEmbed;
+}
+
+function awaitConfirmResponse(message, confirmCallback){
+  message.channel.awaitMessages(m => m.author.id === message.author.id, {
+    maxMatches: 1,
+    time: 30000,
+    errors: ['time']
+  }).then(collected => {
+    let response = collected.first().content;
+    logger.debug(`Message collected ${response}`);
+    if(response.toLowerCase() === 'yes'){
+      confirmCallback();
+    } else if (response.toLowerCase() === 'no'){
+      message.reply('Ok, your selection is cancelled');
+    } else {
+      message.reply('Sorry, I don\'t understand, please say Yes or No.');
+      awaitConfirmResponse(message, confirmCallback);
+    }
+  }).catch(() => { message.reply('Oops! you\'ve run out of time to select!'); });
+}
