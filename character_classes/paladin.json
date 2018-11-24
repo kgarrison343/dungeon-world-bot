@@ -5,5 +5,6 @@
   "recommendedRaces": "Human: When you pray for guidance, even for a moment, and ask, “What here is evil?” the GM will tell you, honestly.",
   "recommendedLooks": "Choose one for each:\n\nKind Eyes, Fiery Eyes, or Glowing Eyes\n\nHelmet, Styled Hair, or Bald\n\nWorn Holy Symbol or Fancy Holy Symbol\n\nFit Body, Bulky Body, or Thin Body",
   "baseHP": 10,
-  "baseDamage": "d10"
+  "baseDamage": "d10",
+  "link": "http://book.dwgazetteer.com/paladin.html"
 }

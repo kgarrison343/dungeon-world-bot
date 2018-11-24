@@ -5,5 +5,6 @@
   "recommendedRaces": "Human: When you Make Camp next to a large, open flame, regain all of your HP.\nSalamander: Non-magical heat and fire cannot harm you.",
   "recommendedLooks": "Choose one for each, or write your own:\n\nStrange brands, ritual scars, perfect skin\n\nSmouldering eys, warm eyes, searing eyes\n\nCrackling voice, whispering, roaring\n\nImperious bearing, manic attitude, barely-hidden rage",
   "baseHP": 4,
-  "baseDamage": "d8"
+  "baseDamage": "d8",
+  "link": "http://book.dwgazetteer.com/immolator.html"
 }

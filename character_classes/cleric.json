@@ -5,5 +5,6 @@
   "recommendedRaces": "Dwarf: You are one with stone. When you commune you are also granted a special version of Words of the Unspeaking as a rote which only works on stone.\nHuman: Your faith is diverse. Choose one wizard spell. You can cast and be granted that spell as if it was a cleric spell.",
   "recommendedLooks": "Choose one for each:\n\nKind Eyes, Sharp Eyes, or Sad Eyes\n\nTonsure, Strange Hair, or Bald\n\nFlowing Robes, Habit, or Common Garb\n\nThin Body, Knobby Body, or Flabby Body",
   "baseHP": 8,
-  "baseDamage": "d6"
+  "baseDamage": "d6",
+  "link": "http://book.dwgazetteer.com/cleric.html"
 }

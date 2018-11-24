@@ -5,5 +5,6 @@
   "recommendedRaces": "Elf: Magic is as natural as breath to you. Detect Magic is a cantrip for you.\nHuman: Choose one cleric spell. You can cast it as if it was a wizard spell.",
   "recommendedLooks": "Choose one for each:\n\nHaunted Eyes, Sharp Eyes, or Crazy Eyes\n\nStyled Hair, Wild Hair, or Pointed Hat\n\nWorn Robes, Stylish Robes, or Strange Robes\n\nPudgy Body, Creepy Body, or Thin Body",
   "baseHP": 4,
-  "baseDamage": "d4"
+  "baseDamage": "d4",
+  "link": "http://book.dwgazetteer.com/wizard.html"
 }

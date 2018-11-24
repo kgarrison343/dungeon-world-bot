@@ -5,5 +5,6 @@
   "recommendedRaces": "You may be elf, dwarf, halfling, or human, but you and your people are not from around here.",
   "recommendedLooks": "Choose one for each:\nMighty thews, long shanks, scrawny, supple\n\nTormented, haunted, wild, shrouded\n\nTattoos, bejeweled, unmarred\n\nScraps, silks, scavenger’s outfit, weather-inappropriate",
   "baseHP": 8,
-  "baseDamage": "d10"
+  "baseDamage": "d10",
+  "link": "http://book.dwgazetteer.com/barbarian.html"
 }

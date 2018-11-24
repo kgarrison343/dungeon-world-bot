@@ -71,6 +71,8 @@ function displayClass(charClass){
     .setDescription(charClass.description)
     .addField('Recommended Races', charClass.recommendedRaces, true)
     .addField('Recommended Names', charClass.recommendedNames, true)
+    .addField('Recommended Looks', charClass.recommendedLooks, true)
+    .addField('More Information', charClass.link, true)
     .setFooter('Respond with yes to select this class!');
 
   return classEmbed;

@@ -5,5 +5,6 @@
   "recommendedRaces": "Halfling: When you attack with a ranged weapon, deal +2 damage.\nHuman: You are a professional. When you spout lore or discern realities about criminal activities, take +1.",
   "recommendedLooks": "Choose one for each:\n\nShifty Eyes or Criminal Eyes\n\nHooded Head, Messy Hair, or Cropped Hair\n\nDark Clothes, Fancy Clothes, or Common Clothes\n\nLithe Body, Knobby Body, or Flabby Body",
   "baseHP": 6,
-  "baseDamage": "d8"
+  "baseDamage": "d8",
+  "link": "http://book.dwgazetteer.com/thief.html"
 }

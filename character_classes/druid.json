@@ -5,5 +5,6 @@
   "recommendedRaces": "Elf: The sap of the elder trees flows within you. In addition to any other attunements, the Great Forest is always considered your land.\nHuman: As your people learned to bind animals to field and farm, so too are you bound to them. You may always take the shape of any domesticated animal, in addition to your normal options.\nHalfling: You sing the healing songs of spring and brook. When you make camp, you and your allies heal +1d6.",
   "recommendedLooks": "Choose one for each:\n\nWise Eyes, Wild Eyes, or Haunting Eyes\n\nFurry Hood, Messy Hair, or Braided Hair\n\nCeremonial Garb, Practical Leathers, or Weathered Hides",
   "baseHP": 6,
-  "baseDamage": "d6"
+  "baseDamage": "d6",
+  "link": "http://book.dwgazetteer.com/druid.html"
 }
